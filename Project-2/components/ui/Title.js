@@ -6,8 +6,9 @@ export default function Title({ children }) {
 
 const styles = StyleSheet.create({
   title: {
+    fontFamily: "open-sans-bold",
     fontSize: 18,
-    fontWeight: "bold",
+    // fontWeight: "bold",
     color: "white",
     textAlign: "center",
     borderWidth: 2,
