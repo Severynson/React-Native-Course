@@ -1,4 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
+// import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StatusBar } from "expo-status-bar";
 import AllPlaces from "./screens/AllPlaces";
@@ -12,9 +13,10 @@ export default function App() {
     <>
       <StatusBar style="dark" />
       <NavigationContainer>
-        <Text>Hello there, help!!!!!</Text>
-        <Stack.Screen name="AllPlaces" component={AllPlaces} />
-        <Stack.Screen name="AddPlace" component={AddPlace} />
+        <Stack.Navigator>
+          <Stack.Screen name="AllPlaces" component={AllPlaces} />
+          <Stack.Screen name="AddPlace" component={AddPlace} />
+        </Stack.Navigator>
       </NavigationContainer>
     </>
   );
